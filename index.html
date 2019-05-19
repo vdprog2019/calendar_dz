@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+    <style>
+
+        #choose{
+            color: blueviolet;
+            font-size: 20px;
+        }
+
+        #calendar{
+            margin-left: 400px;
+            margin-top: 200px;
+            padding: 0;
+        }
+
+        
+
+        .ui-datepicker {
+            display: none;
+            width: 300px;
+            padding: 35px;
+            text-transform: uppercase;
+            font-family: Tahoma;
+            font-size: 12px;
+            background-color: darkgray;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+
+        .ui-datepicker-header {
+            padding-bottom: 10px;
+            border-bottom: 2px solid black;
+            }
+
+        .ui-datepicker-title { 
+            text-align: center; 
+         }
+         
+         .ui-datepicker-month {
+            position: relative;
+            padding-right: 15px;
+            color: black;
+            }
+
+        .ui-datepicker-year{
+            color: black;
+            padding-left: 15px;
+        } 
+
+        .ui-datepicker-next{
+            margin-left: 245px;
+        }
+
+        .ui-datepicker-calendar td{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-weight: normal;
+            
+        }
+
+        .ui-datepicker-calendar .ui-state-default {
+            display: block;
+            width: 36px;
+            outline: none;
+            text-decoration: none;
+            color: blueviolet;
+            border: 1px solid transparent;
+        }
+
+        .ui-datepicker-calendar .ui-state-active {
+            color: black;
+            border: 1px solid black;
+        }
+
+        
+       
+    </style>
+
+</head>
+<body>
+
+<div id="calendar">
+        <span id="choose">Choose your date</span>
+</div>
+ 
+ 
+
+<script>
+       
+          $( "#calendar" ).datepicker({
+            inline:true,
+            firstDay: 1,
+            dayNamesMin: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
+            
+          });
+        
+</script>
+
+</body>
+</html>
